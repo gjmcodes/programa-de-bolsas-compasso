@@ -1,3 +1,4 @@
+
 # programa-de-bolsas-compasso
 Exercícios Programa de bolsas .Net
 
@@ -32,8 +33,18 @@ Requisitos funcionais e não funcionais
 
 
 3 - Descrição da tarefa
-    - Obter os dados necessários para filtrar e exibir os objetos "classe" para o usuário final.
 
+Obter os dados necessários para filtrar e exibir os objetos "classe" para o usuário final.
+
+* A partir da interface IDataService, crie uma nova classe que a implemente.
+    * ObterClassesAsync: Deverá ler do arquivo classes.json
+    * ObterIdsFiltradosAsync: Deverá ler do arquivo ids_filtrados.json
+    * ObterAtributosDeClasseAsync: deverá ler do arquivo atributos.json
+* 	Os arquivos json deverão ser lidos utilizando System.IO.File.ReadAllTextAsync 
+* Os métodos deverão ser chamados de forma assíncrona, simultâneamente e aguardando a conclusão de todas Tasks para prosseguir com  	o algoritmo. 	* As classes deverão ser percorridas em paralelo, filtradas pelo resultado proveniente de ObterIdsFiltradosAsync e adicionadas em uma  	nova lista de forma thread-safe.
+* Após obter a nova lista filtrada, os atributos de cada classe filtrada deverão ser associados a suas respectivas classes baseado na propriedade 	classeId. A associação deverá ocorrer de forma paralela.
+
+	
 ```
 Exemplo para Output:
                 Console.WriteLine(@$"       ----    ----        ---         ");
