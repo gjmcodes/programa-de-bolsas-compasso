@@ -29,7 +29,6 @@ Requisitos funcionais e não funcionais
   * Ler arquivos json utilizando System.IO.File.ReadAllTextAsync para as implementações de IDataService
   * Utilizar a classe Task, async e await
   * Utilizar Parallel.For, Parallel.ForEach ou Plinq
-  * 
 
 
 3 - Descrição da tarefa
