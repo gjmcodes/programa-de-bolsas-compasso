@@ -40,9 +40,11 @@ Obter os dados necessários para filtrar e exibir os objetos "classe" para o usu
     * ObterClassesAsync: Deverá ler do arquivo classes.json
     * ObterIdsFiltradosAsync: Deverá ler do arquivo ids_filtrados.json
     * ObterAtributosDeClasseAsync: deverá ler do arquivo atributos.json
-* 	Os arquivos json deverão ser lidos utilizando System.IO.File.ReadAllTextAsync 
-* Os métodos deverão ser chamados de forma assíncrona, simultâneamente e aguardando a conclusão de todas Tasks para prosseguir com  	o algoritmo. 	* As classes deverão ser percorridas em paralelo, filtradas pelo resultado proveniente de ObterIdsFiltradosAsync e adicionadas em uma  	nova lista de forma thread-safe.
-* Após obter a nova lista filtrada, os atributos de cada classe filtrada deverão ser associados a suas respectivas classes baseado na propriedade 	classeId. A associação deverá ocorrer de forma paralela.
+* Os arquivos json deverão ser lidos utilizando System.IO.File.ReadAllTextAsync 
+* Os métodos deverão ser chamados de forma assíncrona, simultâneamente e aguardando a conclusão de todas Tasks para prosseguir com o algoritmo. 	
+* Os dados obtidos de  ObterClassesAsync deverão ser percorridos em paralelo e filtradas pelo resultado proveniente de ObterIdsFiltradosAsync para serem adicionais em uma  	nova lista de forma thread-safe.
+* Após obter a nova lista filtrada, os atributos de cada classe obtidos de ObterAtributosDeClasseAsync deverão ser associados a suas respectivas classes, contidas na lista filtrada, baseado-se pela propriedade "classeId". A associação deverá ocorrer de forma paralela.
+* Por fim, deverá ser exibido em tela os dados de cada classe e seus atributos, de acordo com o exemplo abaixo.
 
 	
 ```
