@@ -4,6 +4,11 @@ Exercícios Programa de bolsas .Net
 
  # Sugestão atividade 2 Sprint 3
 
+Descrição da atividade:
+Dentro do projeto há 3 arquivos no formato json: atributos.json, classes.json e ids_filtrados.json. Estes arquivos servirão como fontes de dados para a atividade.
+
+O objetivo do exercício é ler todos os objetos do arquivo classes.json e mapeá-los para classes, filtrá-los utilizando os dados de ids_filtrados.json e associar os valores de atributos.json dentro do objeto classe correspondente através dos ids.
+
 Requisitos funcionais e não funcionais
 
 1 - Requisitos Funcionais:
