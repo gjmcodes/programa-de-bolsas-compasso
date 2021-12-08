@@ -48,3 +48,46 @@ O objetivo do exercício é juntar todas as informações e preencher uma lista 
 * O básico as vezes é mais eficiente que o complexo
 * Try/Catch pode não ser muito amigável em produção, mas é um grande amigo para debugar
 * Flags booleanas podem ser grandes aliadas nesta aventura!
+
+
+```
+B7UU2U5U1UF2122j10OU2U2U2U1U2U1U1U2U1U1U1U2U2u1MGUUUF1SSXSSU525U1JO
+G                                                                 .
+B            .:.                                  .,,             :
+B          .,,                                       :.    . .    :
+B         ,,                       :                  ::          :
+B        :.         ...:.  ..  .,   ,.   .   ,         .:         :
+B       :.          , r  :: i,.  ::  ..  .,   :          i        i
+B  .   :.        , ,.:.   iv . ,:..:..:;  ..  .:         .i       :
+B     ,,    ..  i  i,r     .ui.  ir,  rUJ  r.  ,.     .   .:      i
+B    .i     :  i: ..7:      .ir.  ,i:  .:7,.L,  :     ,  . :.     :
+B    :.   , : .r . :2         .     :7:.  u:,r: ,  .  :. .: r     :
+B  . i  . . . .:., ,:              LU.     i, u,:: :   ;  r :.    :
+B   .: ,.. :i .,7                  .,         .:75  .  :. :..:    i
+B ..,. ; . ri. .U .i:.                           rU..  .: .i i    :
+B . :. 7  :.L,  .,:,;Y                            vr, . i  i :.   i
+B  ..:,7  : 7U                                    :...  :. i ,.   :
+B ...r:, iS  :                                    :   . :. :.,:   i
+B .. L:. YM                                   ..  :  .  ,: :.:i   :
+B ...i. iru                            :XMBBBBBBB:: . . .. :..i   i
+M    i. ,rr.                          rBBBBBBB,5B.:. .  ., i ,:   i
+B    ,:.  ::        .:..:             .:BBM0OL 7r i  .. ,, : :.   r
+M    ::. .:.,    ,1BBBBBBB              :GS7rvL.  :.,:,:,..: i    i
+B    ,i.  i i   qBBBBBBM1B.                       ::.  :: ,.,:  . ;
+M    ::.  :. i .qUBBMBM. ;     .                  7:   7. . :     i
+B    ::.  ,: .:   NBY77rr     iU                  Y.  ,v.  :.     i
+B ...i.:   i  :                     .r            j.  ir.,:,      i
+B ...i:r   ,: ,,              i71YLjFNi           u   ::Yi.       i
+B ...::Y,   ,, :              :BBYvL7Ur       .. .L   i:i         :
+B ..,.i:;.  .: :               .k7v7LU7      :..:Yi   :.          i
+B  ....J.i. 7::L:.              .kjJjX.      :   :L:.  .::        :
+B   .  :7 :,:::7Y::.             .vL7      .iE:   r.  .  .:       i
+M  .       .:7  :::i7v.,..             .:2ZOYJU  i  .:.   .:      :
+B   .        .  .  .:i  ..,.,.i7,.iiq8BBB0YiirL ., :.   .  :.     i
+B              .....         :.  7vrFJ7rii:i;LL  :i, .:.   ,.     :
+B             ....... .     :.  ,J7ir:iirrvLLi;   ,:.:     ., .   i
+M              ..... .      :  i :r7r777rr:.   i    ii  i, ; . .  :
+B             . . . . .    .: :i....,..        .i    .::. i.  .   i
+M                           v,       .....      :        r        :
+B         . .              ,i   . . .   ..:::.  i.      ,J    .   i
+```
