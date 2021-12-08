@@ -10,13 +10,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="atributos.json">
+    <None Update="JsonData\artists.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="classes.json">
+    <None Update="JsonData\people_info.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ids_filtrados.json">
+    <None Update="JsonData\people_songs.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="JsonData\songs.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
