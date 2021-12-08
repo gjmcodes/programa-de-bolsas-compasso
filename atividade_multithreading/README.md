@@ -8,6 +8,7 @@ No projeto há 4 arquivos no formato json que possuem dados fragmentados. Quando
 
 O objetivo do exercício é juntar todas as informações e preencher uma lista com objetos com a classe "Output" (Output.cs). Ao total deverão ter 88 registros. Todas as informações de cada objeto "Output" deverão estar preenchidas. Não há nulos.
 
+Por fim deverá ser gerado um arquivo .json com todos os objetos no output.
 # Requisitos
 
   * Há uma animação sendo executada na thread principal. Toda a lógica para gerar o resultado final deverá ser feita sem interromper a animação.
