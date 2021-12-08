@@ -1,90 +1,50 @@
 # programa-de-bolsas-compasso
 
-# Sugestão atividade 2 Sprint 3
+# Atividade 2 Sprint 3
 
-Descrição da atividade:
-Dentro do projeto há 3 arquivos no formato json: atributos.json, classes.json e ids_filtrados.json. Estes arquivos servirão como fontes de dados para a atividade.
+# Descrição da atividade:
 
-O objetivo do exercício é ler todos os objetos do arquivo classes.json e mapeá-los para classes, filtrá-los utilizando os dados de ids_filtrados.json e associar os valores de atributos.json dentro do objeto classe correspondente através dos ids.
+No projeto há 4 arquivos no formato json que possuem dados fragmentados. Quando juntos poderão informar dados de uma pessoa, sua música favorita, o ano da música favorita, outras músicas do gosto dessa pessoa e uma lista com os artistas e todas suas músicas que relacionam com as músicas desta pessoa.
 
-Requisitos funcionais e não funcionais
+O objetivo do exercício é juntar todas as informações e preencher uma lista com objetos com a classe "Output" (Output.cs). Ao total deverão ter 88 registros. Todas as informações de cada objeto "Output" deverão estar preenchidas. Não há nulos.
 
-1 - Requisitos Funcionais:
+# Requisitos
 
- * Deverá ser exibido todos os detalhes de cada "classe" (neste contexto, entenda como classe de jogo RPG) filtrada e seus respectivos atributos
+  * Há uma animação sendo executada na thread principal. Toda a lógica para gerar o resultado final deverá ser feita sem interromper a animação.
+  * Deverá utilizar a classe "Database" para consumir os dados
+  * Poderá utilizar Tasks, Parallel ou pLinq
 
-2 - Requisitos não funcionais
-
-  * C#;
-  * Separar as classes existentes e criar novas em arquivos .cs separados.
-  * Criar classe a partir da interface IDataService
-  * Classes:
-    - ClassesRoot
-      - Classes
+# Exemplo de Resultado Final
+```json
+{
+    "PersonName": "Gary Ortiz",
+    "PersonAge": 50,
+    "FavoriteSong": "Free Fallin'",
+    "FavoriteSongArtist": "Tom Petty",
+    "FavoriteSongYear": 1989,
+    "OtherSongs": [ "King of Spain", "New Realization", "American Girl", "American Music", "Flapper Girl", "High and Dry", "Danny Boy", "Moonshadow", "Little Talks", "Party in the USA", "Summer of '69", "The Mother We Share", "The Weight" ],
+    "ArtistSongs": [
+      {
+        "Artist": {
+          "Id": 41,
+          "Name": "Of Monsters and Men"
+        },
+        "Songs": [
+          {
+            "Id": 98,
+            "Name": "Little Talks",
+            "Year": 2012,
+            "ArtistId": 41
+          }
+        ]
+      }
+   ]
+},
       
-    - IdsRoot
-      - Ids
-            
-    - AtributosRoot
-      - Atributos
-  * Interfaces:
-      IDataService
-      
-  * Ler arquivos json utilizando System.IO.File.ReadAllTextAsync para as implementações de IDataService
-  * Utilizar a classe Task, async e await
-  * Utilizar Parallel.For, Parallel.ForEach ou Plinq
-
-
-3 - Descrição da tarefa
-
-Obter os dados necessários para filtrar e exibir os objetos "classe" para o usuário final.
-
-* A partir da interface IDataService, crie uma nova classe que a implemente.
-    * ObterClassesAsync: Deverá ler do arquivo classes.json
-    * ObterIdsFiltradosAsync: Deverá ler do arquivo ids_filtrados.json
-    * ObterAtributosDeClasseAsync: deverá ler do arquivo atributos.json
-* Os arquivos json deverão ser lidos utilizando System.IO.File.ReadAllTextAsync 
-* Os métodos deverão ser chamados de forma assíncrona, simultâneamente e aguardando a conclusão de todas Tasks para prosseguir com o algoritmo. 	
-* Os dados obtidos de  ObterClassesAsync deverão ser percorridos em paralelo e filtradas pelo resultado proveniente de ObterIdsFiltradosAsync para serem adicionais em uma  	nova lista de forma thread-safe.
-* Após obter a nova lista filtrada, os atributos de cada classe obtidos de ObterAtributosDeClasseAsync deverão ser associados a suas respectivas classes, contidas na lista filtrada, baseado-se pela propriedade "classeId". A associação deverá ocorrer de forma paralela.
-* Por fim, deverá ser exibido em tela os dados de cada classe e seus atributos, de acordo com o exemplo abaixo.
-
-	
+      (...................)
 ```
-Exemplo para Output:
-                Console.WriteLine(@$"       ----    ----        ---         ");
-                Console.WriteLine(@$"Id: {item.Id}                          ");
-                Console.WriteLine(@$"Nome: {item.NomeClasse}                ");
-                Console.WriteLine(@$"      Atributos                        ");
-                Console.WriteLine(@$"FOR: {item.Atributos.Forca}            ");
-                Console.WriteLine(@$"DES: {item.Atributos.Destreza}         ");
-                Console.WriteLine(@$"INT: {item.Atributos.Inteligencia}     ");
-                Console.WriteLine(@"                                        ");
-```
-```
-Output final:
-
-       ----    ----        ---
-Id: 3
-Nome: Monge
-      Atributos
-FOR: 6
-DES: 2
-INT: 4
-
-       ----    ----        ---
-Id: 4
-Nome: Amazona
-      Atributos
-FOR: 5
-DES: 3
-INT: 1
-
-       ----    ----        ---
-Id: 1
-Nome: Mago
-      Atributos
-FOR: 2
-DES: 3
-INT: 4
-```
+# Dicas
+[<img src="https://c.tenor.com/NPJgF7_j7RAAAAAM/dungeons-and-dragons-dungeon-master.gif">]()
+* O básico as vezes é mais eficiente que o complexo
+* Try/Catch pode não ser muito amigável em produção, mas é um grande amigo para debugar
+* Flags booleanas podem ser grandes aliadas nesta aventura!
