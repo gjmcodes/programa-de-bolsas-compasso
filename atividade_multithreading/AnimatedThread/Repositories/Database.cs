@@ -41,7 +41,6 @@ namespace AnimatedThread
             var artists = JsonConvert.DeserializeObject<IEnumerable<Artist>>(artistsData);
 
             return artists;
-            // throw new System.NotImplementedException();
         }
 
         public IEnumerable<Song> GetSongs()
@@ -50,8 +49,6 @@ namespace AnimatedThread
             Thread.Sleep(2000);
             var songsData = File.ReadAllText("JsonData/songs.json");
             /********* *************************************************** *********/
-
-            //throw new System.NotImplementedException();
 
             var songs = JsonConvert.DeserializeObject<IEnumerable<Song>>(songsData);
 
@@ -63,8 +60,6 @@ namespace AnimatedThread
             /********* Não Remover. Porém, pode alterar valores para debug *********/
             var peopleSongsData = await File.ReadAllTextAsync("JsonData/people_songs.json");
             /********* *************************************************** *********/
-
-            //throw new System.NotImplementedException();
 
             var personSongs = JsonConvert.DeserializeObject<IEnumerable<PersonSong>>(peopleSongsData);
 
